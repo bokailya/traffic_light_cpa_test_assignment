@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+flake8 src/
+MYPYPATH=src/ mypy src/
+
+export $(cat .env)
+DJANGO_SETTINGS_MODULE=settings PYTHONPATH=src/ pylint \
+  --load-plugins pylint_django --rcfile=setup.cfg src/

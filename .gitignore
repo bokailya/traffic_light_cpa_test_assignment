@@ -1,0 +1,6 @@
+# Pycharm
+.idea/
+
+# Python
+/backend/venv
+__pycache__

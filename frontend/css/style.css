@@ -1,0 +1,20 @@
+.caret::before {
+  content: "▶";
+  margin-right: 6px;
+}
+
+.caret-down::before {
+  content: "▷";
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+}
